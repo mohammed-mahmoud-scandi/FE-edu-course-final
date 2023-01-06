@@ -107,14 +107,11 @@ define([
 
     
     return function (targetWidget) {
-        // Example how to extend a widget by mixin object
-        $.widget('mage.sidebar', targetWidget, modalWidgetMixin); // the widget alias should be like for the target widget
-
-        return $.mage.sidebar; //  the widget by parent alias should be returned
+        $.widget('mage.sidebar', targetWidget, modalWidgetMixin);
+        return $.mage.sidebar; 
     };
     
 
-    // return $.mage.sidebar;
 });
 
 
